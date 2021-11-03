@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Montserrat&display=swap');
+@import './colors';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+section {
+  height: calc(100vh - 4rem);
+  padding: 2rem;
+}
+
+a {
+  color: $link-color-nutmeg;
+
+  :visited {
+    color: $link-color-nutmeg;
+  }
+}
+
+textarea {
+  padding: 1rem 0.5rem;
+  margin-top: 2rem;
+  border: 1px solid $input-border-edward;
+  border-radius: 4px;
+  resize: none;
+
+  &:focus {
+    box-shadow: inset 0px 1px 2px $book-box-shadow;
+    filter: drop-shadow(0px 0px 4px $input-border-jagged-ice)
+      drop-shadow(0px 0px 2px $input-border-jagged-ice);
+  }
+}
+
+.background {
+  background: url('../assets/images/nocturnal-background.svg') no-repeat left
+    $background-color-linen;
+}
+
+.navigation {
+  text-decoration: none;
+  font-family: 'Abhaya Libre', serif;
+  font-size: 2rem;
+  color: $black;
+  margin-bottom: 2rem;
+}
+
+.flex {
+  display: flex;
+
+  &--column {
+    flex-direction: column;
+  }
+
+  &--row {
+    flex-direction: row;
+  }
+
+  &--justify {
+    &--center {
+      justify-content: center;
+    }
+
+    &--space-between {
+      justify-content: space-between;
+    }
+  }
+
+  &--align {
+    &--baseline {
+      align-items: baseline;
+    }
+  }
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+}
