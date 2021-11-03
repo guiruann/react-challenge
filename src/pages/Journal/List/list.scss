@@ -1,0 +1,27 @@
+.journalList {
+  overflow: hidden;
+
+  &-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    overflow: scroll;
+    height: calc(100% - 2rem);
+    padding-top: 2rem;
+
+    a {
+      width: 48%;
+      text-decoration: none;
+      align-self: center;
+      margin-bottom: 1rem;
+    }
+  }
+}
