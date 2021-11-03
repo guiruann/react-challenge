@@ -1,0 +1,24 @@
+@import '../../styles/colors';
+
+.article {
+  background-color: $background-color-white-linen;
+  box-shadow: -5px 5px 20px $book-box-shadow;
+  text-decoration: none;
+  word-break: break-all;
+  min-height: 180px;
+  color: $text-color-tuna;
+  padding: 1rem;
+
+  &--title {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 800;
+  }
+
+  &--content {
+    font-size: 1.2rem;
+    max-height: 50vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}

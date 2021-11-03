@@ -1,0 +1,18 @@
+@import '../../styles/colors';
+
+.input {
+  padding: 1rem 0.5rem;
+  border: 1px solid rgba(157, 164, 166, 0.5);
+  border-radius: 4px;
+  resize: none;
+
+  &:focus {
+    box-shadow: inset 0px 1px 2px $book-box-shadow;
+    filter: drop-shadow(0px 0px 4px $input-border-jagged-ice)
+      drop-shadow(0px 0px 2px $input-border-jagged-ice);
+  }
+}
+
+input + input {
+  margin-top: 1rem;
+}

@@ -1,0 +1,44 @@
+@import '../../styles/colors';
+
+.header {
+  padding-bottom: 2rem;
+  width: 100%;
+
+  &--centered {
+    align-self: center;
+  }
+
+  &--left {
+    align-self: flex-start;
+
+    &--small {
+      img {
+        height: 1.834rem;
+      }
+    }
+  }
+
+  &--forms {
+    img {
+      padding-bottom: 3rem;
+    }
+  }
+
+  &--title,
+  &--link {
+    color: $link-color-nutmeg;
+  }
+
+  &--title {
+    font-size: 2rem;
+    align-items: baseline;
+  }
+
+  &--link {
+    font-size: 0.75rem;
+
+    :visited {
+      color: $link-color-nutmeg;
+    }
+  }
+}

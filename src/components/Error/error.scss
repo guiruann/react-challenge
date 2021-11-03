@@ -1,0 +1,13 @@
+@import '../../styles/colors';
+
+.error {
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+  text-align: center;
+  background-color: $background-color-persimmon;
+  border-radius: 15px;
+
+  p {
+    color: $white;
+  }
+}
